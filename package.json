@@ -1,6 +1,6 @@
 {
   "name": "mntn-longread",
-  "description": "Landing page",
+  "description": "Vite vanilla JS project",
   "license": "MIT",
   "author": "Mikhail Vlasenko",
   "homepage": "https://smkthat.github.com/mntn-longread",
@@ -14,7 +14,9 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^5.4.1"
+    "postcss-nested": "^6.2.0",
+    "vite": "^5.4.1",
+    "vite-css-modules": "^1.4.2"
   },
   "engines": {
     "node": ">=20.0.0",
