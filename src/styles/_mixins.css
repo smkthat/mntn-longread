@@ -1,0 +1,5 @@
+/* Mixins */
+
+@define-mixin filter-shadow $color {
+  filter: drop-shadow(0 0 2em $(color));
+}

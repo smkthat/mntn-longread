@@ -1,6 +1,9 @@
 import {defineConfig} from 'vite';
-import {patchCssModules} from 'vite-css-modules'
+import {patchCssModules} from 'vite-css-modules';
+import autoprefixer from "autoprefixer";
 import postcssNested from "postcss-nested";
+import postcssMixins from "postcss-mixins";
+import postcssCustomMedia from 'postcss-custom-media';
 
 export default defineConfig({
     base: '/mntn-longread/',
@@ -10,7 +13,12 @@ export default defineConfig({
     ],
     css: {
         postcss: {
-            plugins: [postcssNested()],
+            plugins: [
+                postcssNested(),
+                postcssMixins(),
+                postcssCustomMedia(),
+                autoprefixer(),
+            ],
         }
     },
     build: {
