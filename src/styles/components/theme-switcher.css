@@ -1,0 +1,34 @@
+.theme-switcher {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  z-index: 9999;
+  cursor: pointer;
+
+  &__icon {
+    height: 3em;
+    width: 3em;
+    background-image: var(--i-theme);
+    background-size: cover;
+    will-change: background-image, filter;
+    transition:
+        background-image var(--a-duration) var(--a-effect),
+        filter var(--a-duration) var(--a-effect);
+
+    &:hover {
+      @mixin filter-shadow var(--c-primary);
+    }
+  }
+
+  &__check {
+    display: none;
+  }
+
+  &__check:checked ~ &__icon {
+    background-image: var(--i-theme-dark);
+
+    &:hover {
+      @mixin filter-shadow var(--c-accent);
+    }
+  }
+}

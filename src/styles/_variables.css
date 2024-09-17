@@ -1,0 +1,35 @@
+/* Variables */
+
+:root {
+  /* Default theme */
+
+  /* Colors */
+  --c-accent: #373ca5;
+  --c-accent-hover: #5760ff;
+  --c-primary: #f7df1eaa;
+  --c-secondary: #888888FF;
+  --c-text: #242424;
+  --c-background: #f4f0f0;
+
+  /* Typography */
+  --t-size: 16px;
+  --t-line-height: 1.5;
+  --t-font-family: "SF Pro Display";
+  --t-font-weight: 400;
+  --h-font-family: "Gotham Pro";
+  --h-font-weight: 700;
+
+  /* Icons */
+  --i-theme: url("../assets/icons/icon--day.svg");
+  --i-theme-dark: url("../assets/icons/icon--night.svg");
+
+  /* Animation */
+  --a-duration: 0.3s;
+  --a-effect: ease-in-out;
+}
+
+[data-theme="dark"] {
+  /* Dark theme */
+  --c-text: #fffff7;
+  --c-background: #242424;
+}

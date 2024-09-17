@@ -1,0 +1,72 @@
+:root {
+  font-family: var(--t-font-family), system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: var(--t-size);
+  line-height: var(--t-line-height);
+  font-weight: var(--t-font-weight);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color-scheme: light dark;
+  color: var(--c-text);
+  background-color: var(--c-background);
+  will-change: background-color;
+  transition: background-color var(--a-duration) var(--a-effect);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+a {
+  font-weight: 500;
+  color: var(--c-accent);
+  text-decoration: underline;
+  will-change: color;
+  transition: color var(--a-duration) var(--a-effect);
+
+  &:hover {
+    color: var(--c-accent-hover);
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--h-font-family), system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: var(--h-font-weight);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.card {
+  padding: 2em;
+}
+
+.button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: black;
+  cursor: pointer;
+  will-change: border-color;
+  transition: border-color var(--a-duration) var(--a-effect);
+
+  &:hover {
+    border-color: var(--c-accent-hover);
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+}
