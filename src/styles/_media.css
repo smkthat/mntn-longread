@@ -1,13 +1,7 @@
 /* Screen breakpoints with mobile first approach */
 
-/* mobile phones and portrait tablets */
-@custom-media --sm-breakpoint (min-width: 321px);
-
-/* album tablets and small laptops */
-@custom-media --md-breakpoint (min-width: 769px);
-
-/* desktops and laptops */
-@custom-media --lg-breakpoint (min-width: 993px);
-
-/* high-resolution desktops and laptops */
-@custom-media --xl-breakpoint (min-width: 1201px);
+@custom-media --break-point--mobile screen and (min-width: 480px);
+@custom-media --break-point--tablet screen and (min-width: 768px);
+@custom-media --break-point--tablet-l screen and (min-width: 1024px);
+@custom-media --break-point--desktop screen and (min-width: 1536px);
+@custom-media --break-point--desktop-l screen and (min-width: 1920px);
