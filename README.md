@@ -2,7 +2,8 @@
 
 Практическая работа
 
-<br>
+[![pages-build-deployment](https://github.com/smkthat/mntn-longread/actions/workflows/pages/pages-build-deployment/badge.svg?branch=master)](https://github.com/smkthat/mntn-longread/actions/workflows/pages/pages-build-deployment)
+
 
 ## Задача
 
