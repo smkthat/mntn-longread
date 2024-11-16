@@ -1,8 +1,8 @@
 :root {
-  font-family: var(--t-font-family), system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-size: var(--t-size);
-  line-height: var(--t-line-height);
-  font-weight: var(--t-font-weight);
+  font-family: var(--f-family--primary), system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: var(--f-size--xs);
+  line-height: var(--f-height);
+  font-weight: var(--f-weight--regular);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -15,16 +15,28 @@
   transition: background-color var(--a-duration) var(--a-effect);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  flex-direction: column;
+  justify-content: space-between;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 a {
-  font-weight: 500;
+  font-weight: normal;
   color: var(--c-accent);
   text-decoration: underline;
   will-change: color;
@@ -33,20 +45,6 @@ a {
   &:hover {
     color: var(--c-accent-hover);
   }
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--h-font-family), system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-weight: var(--h-font-weight);
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-.card {
-  padding: 2em;
 }
 
 .button {
@@ -69,4 +67,24 @@ h1 {
   &:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
   }
+}
+
+.icon {
+  height: 24px;
+
+  &--rotate {
+    transform: rotate(-90deg);
+    transform-origin: center center;
+  }
+}
+
+.follow {
+  font-size: var(--f-size--sm);
+  color: var(--c-text);
+  display: flex;
+  width: 24px;
+  text-wrap: nowrap;
+  flex-shrink: 0;
+  place-items: center;
+  gap: 16px;
 }

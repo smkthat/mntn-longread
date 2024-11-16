@@ -1,35 +1,50 @@
 /* Variables */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap');
 
 :root {
   /* Default theme */
 
   /* Colors */
-  --c-accent: #373ca5;
-  --c-accent-hover: #5760ff;
+  --c-accent: #ffb816;
+  --c-accent-hover: #fbd784;
   --c-primary: #f7df1eaa;
   --c-secondary: #888888FF;
-  --c-text: #242424;
-  --c-background: #f4f0f0;
+  --c-text: #0B1D26;
+  --c-background: #ffffff;
 
   /* Typography */
-  --t-size: 16px;
-  --t-line-height: 1.5;
-  --t-font-family: "SF Pro Display";
-  --t-font-weight: 400;
-  --h-font-family: "Gotham Pro";
-  --h-font-weight: 700;
+  --f-size--3xs: 12px;
+  --f-size--xxs: 13px;
+  --f-size--xs: 14px;
+  --f-size--sm: 16px;
+  --f-size--md: 18px;
+  --f-size--lg: 20px;
+  --f-size--xl: 24px;
 
-  /* Icons */
-  --i-theme: url("../assets/icons/icon--day.svg");
-  --i-theme-dark: url("../assets/icons/icon--night.svg");
+  --f-weight--thin: 100;
+  --f-weight--extralight: 200;
+  --f-weight--light: 300;
+  --f-weight--regular: 400;
+  --f-weight--medium: 500;
+  --f-weight--semibold: 600;
+  --f-weight--bold: 700;
+  --f-weight--extrabold: 800;
+  --f-weight--black: 900;
+
+  --f-height: 32px;
+  --f-family--primary: "Poppins", sans-serif;
+  --f-family--heading: "Playfair Display", serif;
 
   /* Animation */
   --a-duration: 0.3s;
-  --a-effect: ease-in-out;
+  --a-effect: ease-in;
 }
 
 [data-theme="dark"] {
   /* Dark theme */
-  --c-text: #fffff7;
-  --c-background: #242424;
+  --c-text: #ffffff;
+  --c-background: #0B1D26;
+  --c-accent: #fbd784;
+  --c-accent-hover: #ffb816;
 }

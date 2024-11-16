@@ -1,7 +1,10 @@
 @import "_variables.css";
 @import "_media.css";
-@import "_mixins.css";
 @import "_base.css";
 
+@import "components/nav.css";
+@import "components/header.css";
+@import "components/footer.css";
 @import "components/content.css";
+@import "components/main.css";
 @import "components/theme-switcher.css";
