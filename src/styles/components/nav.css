@@ -8,6 +8,11 @@
   will-change: color;
   transition: color var(--a-duration) var(--a-effect);
 
+  &__icon {
+    height: 25px;
+    width: 25px;
+  }
+
   &__icon > path {
     fill: var(--c-text);
     will-change: fill;
