@@ -1,0 +1,4 @@
+<svg class="menu-button__icon icon icon--cross" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+  <path d="M5.80762 5.80774 24.1924 24.1925" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+  <path d="M5.80762 24.1925 24.1924 5.80773" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+</svg>

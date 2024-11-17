@@ -1,0 +1,5 @@
+<svg class="menu-button__icon icon icon--burger" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+  <path d="M2 6.51276h26" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M2 15.5129h26" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M2 24.5129h26" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+</svg>

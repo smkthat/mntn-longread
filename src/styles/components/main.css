@@ -13,6 +13,11 @@
     top: calc(100vh / 2 - 160px);
     flex-direction: column;
 
+    & .nav-link__icon {
+      height: 20px;
+      width: 20px;
+    }
+
     & .follow__text {
       writing-mode: vertical-rl;
     }
