@@ -58,7 +58,7 @@
   &__link {
     position: absolute;
     left: 10px;
-    bottom: 40px;
+    bottom: 80px;
     align-self: start;
     animation: up-down 4s infinite;
     animation-play-state: running;
@@ -94,7 +94,7 @@
   &__quick-nav {
     position: absolute;
     right: 10px;
-    bottom: 40px;
+    bottom: 80px;
     align-items: end;
     gap: 0;
     z-index: 10;
