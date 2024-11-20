@@ -1,0 +1,72 @@
+.parallax-image {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  z-index: -1000;
+
+  &__layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    transform: scale(1.4);
+    background-size: cover;
+    overflow: visible;
+
+    &--0 {
+      background-image: url("../../assets/images/sky.png");
+    }
+
+    &--1 {
+      bottom: 50%;
+      right: 0;
+      width: calc(100% * 20);
+      background-image: url("../../assets/images/cloud--3.png");
+      background-size: contain;
+      background-repeat: repeat no-repeat;
+      transform: none;
+      opacity: .5;
+      @mixin swim-right 8000s;
+    }
+
+    &--2 {
+      background-image: url("../../assets/images/rocks.png");
+    }
+
+    &--3 {
+      top: 40%;
+      right: 0;
+      width: calc(100% * 20);
+      background-image: url("../../assets/images/cloud--2.png");
+      background-size: contain;
+      background-repeat: repeat no-repeat;
+      transform: none;
+      opacity: .3;
+      @mixin swim-right 10000s;
+    }
+
+    &--4 {
+      background-image: url("../../assets/images/land.png");
+    }
+
+    &--5 {
+      top: calc(50%);
+      right: 0;
+      opacity: .2;
+      width: calc(100% * 20);
+      background-image: url("../../assets/images/cloud--3.png");
+      background-size: contain;
+      background-repeat: repeat no-repeat;
+      transform: rotateX(180deg);
+      @mixin swim-right 2000s;
+    }
+  }
+
+  @media (--break-point--tablet-l) {
+    &__layer {
+      transform: scale(1.1);
+    }
+  }
+}

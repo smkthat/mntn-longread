@@ -15,22 +15,22 @@
  */
 export default class Menu {
 
-    /**
-     * Initializes the menu by adding event listeners to the open and close buttons.
-     *
-     * @return {void} This function does not return a value.
-     */
-    init() {
-        this.menuButtonOpen.addEventListener('click', this.toggleMenu.bind(this));
-        this.menuButtonClose.addEventListener('click', this.toggleMenu.bind(this));
-    }
-
     constructor(menuElement, menuButtonOpenElement, menuButtonCloseElement, activeClassSelector) {
         this.activeClass = activeClassSelector;
         this.menu = menuElement;
         this.menuButtonOpen = menuButtonOpenElement;
         this.menuButtonClose = menuButtonCloseElement;
     }
+
+  /**
+   * Initializes the menu by adding event listeners to the open and close buttons.
+   *
+   * @return {void} This function does not return a value.
+   */
+  init() {
+    this.menuButtonOpen.addEventListener('click', this.toggleMenu.bind(this));
+    this.menuButtonClose.addEventListener('click', this.toggleMenu.bind(this));
+  }
 
     /**
      * Toggles the active class on the menu element to open or close the menu.

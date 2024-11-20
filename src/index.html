@@ -8,6 +8,8 @@
 </head>
 <body>
 
+<div class="preloader"></div>
+
 <header class="header">
   <div class="header__menu menu">
     <div class="menu__mobile">
@@ -44,22 +46,54 @@
 
 <main class="main">
 
-  <div class="main__follow follow">
-    <span class="follow__text">Follow us</span>
-    <a href="#" class="nav-link"></a>
-    <a href="#" class="nav-link"></a>
-  </div>
+  <section class="main__hero hero">
 
-  <ul class="main__quick-nav nav-list nav-list--vertical">
-    <li class="nav-list__item nav-list__item--active"><a
-      class="nav-link scroll-link" href="#">Start</a></li>
-    <li class="nav-list__item" data-id="01"><a class="nav-link scroll-link"
-                                               href="#01">01</a></li>
-    <li class="nav-list__item" data-id="02"><a class="nav-link scroll-link"
-                                               href="#02">02</a></li>
-    <li class="nav-list__item" data-id="03"><a class="nav-link scroll-link"
-                                               href="#03">03</a></li>
-  </ul>
+    <div class="hero__container">
+      <div class="hero__heading heading">
+        <div class="hero__follow follow">
+          <span class="follow__text">Follow us</span>
+          <a href="#" class="nav-link"></a>
+          <a href="#" class="nav-link"></a>
+        </div>
+        <div class="heading__intro intro">
+          <figure class="intro__line"></figure>
+          <span class="intro__text">A Hiking guide</span>
+        </div>
+        <h1 class="heading__title">
+          Be Prepared For The Mountains And Beyond!
+        </h1>
+        <a class="hero__link nav-link" href="#01">
+          scroll down
+        </a>
+      </div>
+    </div>
+
+    <ul class="hero__quick-nav nav-list nav-list--vertical">
+      <li class="nav-list__item nav-list__item--active">
+        <a class="nav-link scroll-link" href="#">Start</a>
+      </li>
+      <li class="nav-list__item" data-id="01">
+        <a class="nav-link scroll-link" href="#01">01</a>
+      </li>
+      <li class="nav-list__item" data-id="02">
+        <a class="nav-link scroll-link" href="#02">02</a>
+      </li>
+      <li class="nav-list__item" data-id="03">
+        <a class="nav-link scroll-link" href="#03">03</a>
+      </li>
+    </ul>
+
+    <div class="hero__background-overlay"></div>
+
+    <div class="hero__background parallax-image">
+      <div class="parallax-image__layer parallax-image__layer--0"></div>
+      <div class="parallax-image__layer parallax-image__layer--1"></div>
+      <div class="parallax-image__layer parallax-image__layer--2"></div>
+      <div class="parallax-image__layer parallax-image__layer--3"></div>
+      <div class="parallax-image__layer parallax-image__layer--4"></div>
+      <div class="parallax-image__layer parallax-image__layer--5"></div>
+    </div>
+  </section>
 
   <section class="main__content content">
     <article id="01" class="content__article article">
@@ -88,6 +122,7 @@
       </div>
 
     </article>
+
     <article id="02" class="content__article article article--reverse">
       <div class="article__image responsive-image">
         <img class="responsive-image__img" src="assets/images/02.png"
@@ -113,6 +148,7 @@
         </a>
       </div>
     </article>
+
     <article id="03" class="content__article article">
       <div class="article__heading heading">
         <span class="heading__number">03</span>
@@ -141,8 +177,8 @@
   </section>
 </main>
 
-<footer class="wrapper">
-  <div class="footer">
+<footer class="footer">
+  <div class="footer__container">
     <div class="footer__brand brand">
       <a href="#" class="brand__logo nav-logo"></a>
       <span class="brand__desc">

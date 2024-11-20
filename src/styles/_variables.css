@@ -13,12 +13,12 @@
   --c-text: #0B1D26;
   --c-background: #ffffff;
 
+  --bg-divider: linear-gradient(to top, var(--c-background) 0%, rgba(255, 255, 255, .5) 50%, rgba(255, 255, 255, 0) 100%);
+
   /* Typography */
   --f-size--3xs: 12px;
   --f-size--xxs: 13px;
   --f-size--xs: 14px;
-  --f-size--sm: 16px;
-  --f-size--md: 18px;
   --f-size--lg: 20px;
   --f-size--xl: 24px;
 
@@ -47,4 +47,6 @@
   --c-background: #0B1D26;
   --c-accent: #fbd784;
   --c-accent-hover: #ffb816;
+
+  --bg-divider: linear-gradient(to top, var(--c-background) 0%, rgba(11, 29, 38, .5) 50%, rgba(11, 29, 38, 0) 100%);
 }

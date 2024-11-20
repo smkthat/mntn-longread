@@ -195,7 +195,7 @@
     }
 
     & .nav-link {
-      font-size: var(--f-size--md);
+      font-size: large;
       font-weight: var(--f-weight--bold);
     }
 

@@ -3,3 +3,23 @@
 @define-mixin filter-shadow $color {
   filter: drop-shadow(0 0 2em $(color));
 }
+
+@define-mixin swim-right $speed {
+  animation: swimRightAnimation $(speed) infinite linear;
+
+  @keyframes swimRightAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+}
+
+@define-mixin user-select-none {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
