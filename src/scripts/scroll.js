@@ -13,24 +13,13 @@
  */
 export default class Scroll {
 
-    /**
-     * Initializes event listeners for scroll and resize events, as well as click events on scrollLinks.
-     * Binds the 'process' method to the current instance of the class.
-     *
-     * @return {void} This function does not return a value.
-     */
-    init() {
-        window.addEventListener('scroll', this.process.bind(this));
-        window.addEventListener('resize', this.process.bind(this));
-    }
-
     constructor(menu, quickNavClassSelector, quickNavActiveClass) {
         if (!menu) {
             throw new Error('Menu must be provided');
         }
 
         this.menu = menu;
-        this.footer = document.querySelector('.footer');
+        this.footer = document.querySelector('.footer__container');
         this.header = document.querySelector('.header');
         this.quickNavClassSelector = quickNavClassSelector;
         this.quickNavActiveClass = quickNavActiveClass;
@@ -38,6 +27,17 @@ export default class Scroll {
             this.quickNavClassSelector
         ).querySelectorAll('.nav-list__item');
     }
+
+  /**
+   * Initializes event listeners for scroll and resize events, as well as click events on scrollLinks.
+   * Binds the 'process' method to the current instance of the class.
+   *
+   * @return {void} This function does not return a value.
+   */
+  init() {
+    window.addEventListener('scroll', this.process.bind(this));
+    window.addEventListener('resize', this.process.bind(this));
+  }
 
     /**
      * Returns the height of the header element.

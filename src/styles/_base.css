@@ -79,7 +79,7 @@ a {
 }
 
 .follow {
-  font-size: var(--f-size--sm);
+  font-size: medium;
   color: var(--c-text);
   display: flex;
   width: 24px;

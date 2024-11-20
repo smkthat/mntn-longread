@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   text-decoration: none;
-  gap: 8px;
+  gap: 10px;
   color: var(--c-text);
   font-weight: var(--f-weight--semibold);
   will-change: color;
@@ -61,10 +61,14 @@
   }
 
   &__title {
-    font-size: var(--f-size--lg);
+    font-size: 20px;
     font-weight: var(--f-weight--bold);
     color: var(--c-accent);
     line-height: 32px;
     margin-bottom: 8px;
+
+    @media (--break-point--tablet) {
+      font-size: x-large;
+    }
   }
 }
